@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+     width: 100%;
+    min-height: 100vh;
+    background: #498b9b;
+}
+
+.todo-app{
+    width: fit-content;
+    background-color:white;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+}
+
+.todo-app h2{
+    color:#0f3f8d ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.todo-app h2 img{
+    width: 50px;
+    margin-left: 5px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 15px 40px;
+    background: #f54f99;
+    color: #ffefef;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li:hover{
+    background-color:whitesmoke;
+    border-radius: 40px;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwtwety5OAdkI_pnPb468BXxbg6U9xmm4eYw&s);
+    background-size: cover;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-aV4ltFzmnLYFE1j5rlxPOs9VE8cZPudZ7w&s);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #2a2929;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #e8e8ea;
+}
+
+.back-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.back-btn {
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+
+@media (max-width:420px){
+    input{
+    padding: 5px;
+}
+
+button{
+    padding: 10px 12px;
+    border-radius: 40px;
+}
+}

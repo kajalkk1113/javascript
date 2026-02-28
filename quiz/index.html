@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GK Quiz App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-box">
+        <h1 id="title">General Knowledge Quiz</h1>
+        
+        <div id="q">Question will appear here</div>
+
+        <button id="o1" onclick="ans(0)"></button>
+        <button id="o2" onclick="ans(1)"></button>
+        <button id="o3" onclick="ans(2)"></button>
+        <button id="o4" onclick="ans(3)"></button>
+
+        <div id="result"></div>
+
+        <button id="restart-btn" onclick="restartQuiz()" style="display: none;">
+            Restart Quiz
+        </button>
+    </div>
+
+    <div class="back-container">
+    <a href="index.html" class="back-btn">← Back to Homepage</a>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
